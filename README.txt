@@ -1,0 +1,1 @@
+This is the project 2 from FreeCodeCamp's Responsive Web Design course.

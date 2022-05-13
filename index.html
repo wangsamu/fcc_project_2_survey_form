@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manmanchi Recipes Survey</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">"Manmanchi Recipes Survey"</h1>
+      <p id="description">
+        "Thank you for taking the time to help us improve the site!"
+      </p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">email address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="age" id="number-label">
+            Age
+            <span class="clue"> (optional) </span>
+          </label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="1"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dropdown" id="dropdown-label"
+            >How many times do you cook each week?</label
+          >
+          <select name="dropdown" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="0-3">0 to 3 times</option>
+            <option value="3-6">3 to 6 times</option>
+            <option value="6-10">6 to 10 times</option>
+            <option value="10+">more than 10 times</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <legend>
+            Would you like to receive weekly newletters with new recipes?
+          </legend>
+          <div class="radio-options">
+            <input
+              type="radio"
+              name="newsletter"
+              value="Sure thing!"
+              class="input-radio"
+              checked
+            />
+            <label> Sure thing! </label>
+          </div>
+          <div class="radio-options">
+            <input
+              type="radio"
+              name="newsletter"
+              value="Not now."
+              class="input-radio"
+            />
+            <label> Not now. </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <legend>What kind of food are you interested in?</legend>
+          <div>
+            <input
+              class="input-checkboxes"
+              name="preferences"
+              type="checkbox"
+              value="Asian"
+            />
+            <label>Asian</label>
+          </div>
+          <div>
+            <input
+              class="input-checkboxes"
+              name="preferences"
+              type="checkbox"
+              value="Mediterrenean"
+            />
+            <label>Mediterrenean</label>
+          </div>
+          <div>
+            <input
+              class="input-checkboxes"
+              name="preferences"
+              type="checkbox"
+              value="Mexican"
+            />
+            <label>Mexican</label>
+          </div>
+          <div>
+            <input
+              class="input-checkboxes"
+              name="preferences"
+              type="checkbox"
+              value="Other"
+            />
+            <label>Other</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <legend>Any comments or suggestions?</legend>
+          <textarea
+            name="comments"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
